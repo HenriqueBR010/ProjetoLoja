@@ -20,7 +20,7 @@ public class Operacoes {
 	
 	@FXML
 	private Button btnCadastrar;
-	
+	//
 	
 	@FXML
 	private void validarUsuario(ActionEvent event) {
