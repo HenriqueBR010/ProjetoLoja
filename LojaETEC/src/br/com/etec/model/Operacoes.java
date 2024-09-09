@@ -6,6 +6,7 @@ import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
+import javafx.stage.Stage;
 
 public class Operacoes {
 	
@@ -21,6 +22,11 @@ public class Operacoes {
 	@FXML
 	private Button btnCadastrar;
 	//
+	@FXML
+	private Button btn_fechar;
+	
+	@FXML
+	private Stage acpPalco;
 	
 	@FXML
 	private void validarUsuario(ActionEvent event) {
@@ -55,5 +61,11 @@ public class Operacoes {
 		alerta.setTitle(titulo);
 		alerta.setContentText(mensagem);
 		alerta.showAndWait();
+	}
+	
+	@FXML
+	private void fecharTelaLogin(ActionEvent event) {
+		acpPalco = (Stage) btn_fechar.getScene().getWindow();
+		acpPalco.close();
 	}
 }
